@@ -6,19 +6,19 @@
 
 
 ### Cheat Sheet:  
-	* `docker --version` - Check the docker version
+    * `docker --version` - Check the docker version
 
 
-	* `docker pull img_name` - Pull an image off of DockerHub
+    * `docker pull img_name` - Pull an image off of DockerHub
 
 
-	* `docker run img_name` - This will pull and then containerise an image
-		* `-d` - Detached
-		* `-p local_port:container_port` - Map a port 
+    * `docker run img_name` - This will pull and then containerise an image
+        * `-d` - Detached
+        * `-p local_port:container_port` - Map a port 
 		* `--name` - Name the container
 
 
-	* `docker rmi -f img_name` - Delete an image `-f` is force
+    * `docker rmi -f img_name` - Delete an image `-f` is force
 
 
 	* `docker ps -a` - List containers, `-a` is for all
