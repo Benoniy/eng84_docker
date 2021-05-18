@@ -45,6 +45,9 @@
 	* `docker push image_id`
 
 
+	* `docker build -t <repo> <path>`
+
+
 ### Why use Docker?  
 	* Industry standard
 	* Efficient operation
@@ -90,7 +93,25 @@
 		1. `docker ps -a` - find the container id of the container you want to turn into an image  
 		2. `docker commit <container_id> <name_of_repo>` - then commit it to a new image, note  
 		   `<name_of_repo>` should contain `username/name`  
-		3. `docker push <name_of_repo>:<tag>` - This pushes it, `<tag>` is usualy `latest`  
+		3. `docker push <name_of_repo>:<tag>` - This pushes it, `<tag>` is usualy `latest`
+
+
+	We can do the same thing using a dockerfile instead:
+    ```
+    # Define the base image 
+	# You can do this using the keyword FROM
+	FROM nginx
+	LABEL MAINTAINER = branson@spartaglobal.com
+
+	# COPY something into the base image
+	COPY index.html /usr/share/nginx/html/index.html
+
+	# Expose port 80
+	EXPOSE 80
+
+	# Executes a command
+	CMD ["nginx", "-g", "daemon off;"]
+    ``` 
 
 
 	***What are microservics?***  

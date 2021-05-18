@@ -1,0 +1,20 @@
+
+
+# for Pycharm
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/venv/
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/.idea/
+*/__pycache__/
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/__pycache__/
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/.pycache/
+
+
+# for VS Code
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/.vscode/
+*/__init__.py
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/__init__.py
+
+# for the project
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/notes/
+
+# for server information
+part_3-plane_project/eng84_Team_1_Python_Plane_Project/server_info.cfg
