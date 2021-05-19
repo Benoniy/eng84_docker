@@ -6,7 +6,7 @@ services:
         - DB_HOST=mongodb://mongo:27017/posts
       container_name: node-app
       image: benranson/webapp
-      build: .
+      build: ./webapp
       ports:
         - "3000:3000"
       restart: on-failure
@@ -15,7 +15,7 @@ services:
     mongo:
       container_name: mongo
       image: benranson/mongod
-      build: ../mongod
+      build: ./mongod
       volumes:
         - ./persistent_data:/data/db
       ports: 
